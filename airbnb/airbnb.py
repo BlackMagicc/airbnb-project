@@ -76,7 +76,6 @@ class Airbnb(webdriver.Chrome):
             )
             next_month_button.click()
             initial_month_range -= 1
-            print('horny')
         check_in_day = WebDriverWait(self, 3).until(
             EC.element_to_be_clickable((By.XPATH, f'//div[@data-testid="datepicker-day-{check_in_date}"]'))
         )
